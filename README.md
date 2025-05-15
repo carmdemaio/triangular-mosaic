@@ -1,8 +1,8 @@
-**Triangular Mosaic Generator
-**
+# **Triangular Mosaic Generator**
+
 A dynamic, browser-based mosaic generator that subdivides a canvas into triangles, rendering them with either vibrant solid colors or image-based patterns. Watch in real-time as the mosaic builds itself, with an optional art‑nouveau “psychedelic” curve style for each triangle edge.
 
-🎨 **Features**
+# 🎨 **Features**
 
 Real-Time Generation: See the mosaic animate step‑by‑step using requestAnimationFrame.
 
@@ -16,7 +16,7 @@ Responsive Canvas: Full‑screen, auto‑resizes to your browser window.
 
 Easy Toggle: A fixed button lets you switch curve mode on or off at any time.
 
-📂 File Structure
+# 📂 **File Structure**
 
 triangular-mosaic/
 ├── index.html        # Main entry; loads CSS and JS
@@ -27,7 +27,7 @@ triangular-mosaic/
 ├── assets/           # Drop `img1.jpeg`, `img2.jpeg`, … here for pattern fills
 └── README.md         # Project documentation
 
-🔧 Installation & Setup
+# 🔧 **Installation & Setup**
 
 Clone the repo
 
@@ -41,15 +41,15 @@ Simply double‑click index.html in a browser, or
 Run a lightweight server (recommended for pattern fetch):
 
 python3 -m http.server 8000
-# then open http://localhost:8000
+then open http://localhost:8000
 
-**Prepare assets** (optional)
+# **Prepare assets** (optional)
 
 Add image files named sequentially (img1.jpeg, img2.jpeg, …) into the assets/ folder. There are currently three images in the folder already. They are from ThisPersonDoesNotExist.com THEY ARE NOT REAL PEOPLE. If you remove the assets, the application defaults to generating red, green, and blue triangles. 
 
 On load, the script will detect these images and use them as fill patterns.
 
-⚙️ Configuration
+# ⚙️ **Configuration**
 
 MIN_AREA (in js/mosaic.js): Adjust to control how small triangles get (px²). Smaller → more triangles.
 
@@ -57,7 +57,7 @@ Curve offsets: In drawCurvyTriangle(), tweak the offset range (20 + Math.random(
 
 Color Palette: Modify the colors array in js/mosaic.js for different fallback fills.
 
-🧩 Future Customization Ideas
+# 🧩 **Future Customization Ideas**
 
 Add an export button to snapshot the canvas as a PNG.
 
@@ -67,11 +67,11 @@ Animate the curve toggle with a smooth transition.
 
 Allow subdividing based on other criteria (e.g., brightness from an input image).
 
-🤝 Contributing
+# 🤝 **Contributing**
 
 Feel free to open issues or pull requests for new features, bug fixes, or optimizations.
 
-📜 License
+# 📜 **License**
 
 Whatever you wanna do with this code as long as it is non commercial. Otherwise reach out to me.
 
